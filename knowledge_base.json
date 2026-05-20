@@ -1,0 +1,803 @@
+[
+    {
+        "nazwa": "Inteligencja obliczeniowa (Wykład)",
+        "kod": "PG_00155305",
+        "kierunek": "Informatyka (P)",
+        "ects": "6.0",
+        "forma_zaliczenia": "egzamin",
+        "odpowiedzialny": "mgr Grzegorz Madejski",
+        "prowadzacy": [],
+        "godziny": {
+            "wyklad": "30.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "30.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "60h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "90.0h",
+            "razem": "150h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "David E. Goldberg: Algorytmy genetyczne i ich zastosowanie, WNT 2003",
+                "Marcin Szeliga: Praktyczne uczenie maszynowe, PWN 2019",
+                "Joel Grus: Data science od podstaw, Helion 2018",
+                "Drew Conway, John Myles White: Uczenie maszynowe, Helion 2015",
+                "Marcin Szeliga: Data Science i Uczenie Maszynowe, PWN 2017",
+                "Sebastian Raschka, Vahid Mirjalili: Python. Uczenie Maszynowe, wyd. 2, Helion 2019",
+                "Seth Weidman: Uczenie głębokie od zera. Podstawy implementacji w Pythonie, Helion 2020",
+                "Jacek Tabor, Marek Śmieja, Łukasz Struski Przemysław: Uczenie głębokie. Wprowadzenie, Helion 2022",
+                "Maciej Wenerski: Podstawy logiki rozmytej i wnioskowania rozmytego, 2013",
+                "Samouczki internetowe, podawane na bieżąco na wykładzie"
+            ],
+            "uzupelniajaca": []
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_U01] potrafi zastosować wiedzę matematyczną do formułowania, analizowania i rozwiązywania problemów związanych z informatyką, projektować i analizować algorytmy pod kątem ich poprawności i złożoności obliczeniowej",
+                "efekt_z_przedmiotu": "- potrafi wyrażać praktyczne problemy w sformalizowany sposób (potrafi dobrać właściwy model z dziedziny inteligencji obliczeniowej); - potrafi sporządzić dokumentację wykonanego projektu, przedstawić wyniki badań i opis użytej metody oraz jej uzasadnienie (projekt dotyczący inteligencji obliczeniowej).",
+                "sposob_weryfikacji": "[SU2] prezentacja/projekt/referat/ raport [SU5] realizacja zadania problemowego [SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W02] ma uporządkowaną, podbudowaną teoretycznie wiedzę ogólną w zakresie sztucznej inteligencji, języków formalnych, metod numerycznych",
+                "efekt_z_przedmiotu": "- zna wybrane algorytmy w zakresie inteligencji obliczeniowej; - zna techniki analizy i optymalizacji algorytmów w zakresie inteligencji obliczeniowej.",
+                "sposob_weryfikacji": "[SW4] test/egzamin - ustny lub pisemny"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U04] potrafi tworzyć, uruchamiać i testować programy przy wykorzystaniu dedykowanych narzędzi oraz wzorców projektowych",
+                "efekt_z_przedmiotu": "- potrafi sporządzić dokumentację wykonanego projektu, przedstawić wyniki badań i opis użytej metody oraz jej uzasadnienie (projekt dotyczący inteligencji obliczeniowej).",
+                "sposob_weryfikacji": "[SU2] prezentacja/projekt/referat/ raport [SU5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "- rozumie konieczność systematycznej pracy nad zagadnieniami inteligencji obliczeniowej, które mają długą przestrzeń czasową",
+                "sposob_weryfikacji": "[SK2] prezentacja/projekt/referat/ raport [SK8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych projekty",
+                "prog": "0.0%",
+                "waga": "50.0%"
+            },
+            {
+                "typ": "efektów uczenia się egzamin",
+                "prog": "0.0%",
+                "waga": "25.0%"
+            },
+            {
+                "typ": "rozwiązywanie zadań",
+                "prog": "0.0%",
+                "waga": "25.0%"
+            }
+        ],
+        "program": [
+            "Inspirowane biologicznie algorytmy metaheurystyczne, ze szczególnym uwzględnieniem algorytmu genetycznego.",
+            "Uczenie maszynowe nadzorowane. Zadanie klasyfikacji i regresji.",
+            "Uczenie maszynowe nienadzorowane. Grupowanie i szukanie reguł asocjacyjnych.",
+            "Sztuczne sieci neuronowe.",
+            "Uczenie głębokie: sieci przetwarzające obrazy, tekst, generatywne.",
+            "Podstawy uczenia przez wzmacnianie.",
+            "Logika rozmyta."
+        ],
+        "cel": "zapoznanie studentów z możliwościami i technikami inteligencji obliczeniowej. Zakłada się, że uczestnik zajęć pozna podstawowe techniki i nabędzie umiejętność dobierania odpowiednich modeli i algorytmów do zadań i dyskutowania rozwiązań.",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Języki programowania I",
+        "kod": "PG_00155294",
+        "kierunek": "Informatyka (P)",
+        "ects": "4.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "dr Wiesław Pawłowski",
+        "prowadzacy": [],
+        "godziny": {
+            "wyklad": "30.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "30.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "60h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "40.0h",
+            "razem": "100h"
+        },
+        "literatura": {
+            "podstawowa": [],
+            "uzupelniajaca": [
+                "M. Odersky, L. Spoon, B. Venners, F. Sommers, Programming in Scala, Fifth Edition, Artima Press,",
+                "D. Wampler, Programming Scala, 3rd Edition. O'Reilly Media,",
+                "F. Lopez-Sancho, Akka in Action, Second Edition, Manning"
+            ]
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_U08] ocenia przydatność różnych paradygmatów i narzędzi programistycznych do rozwiązywania problemów różnego typu",
+                "efekt_z_przedmiotu": "umie rozwiązywać problemy programistyczne z pomocą poznanych paradygmatów programowania",
+                "sposob_weryfikacji": "[SU4] test/egzamin - ustny lub pisemny [SU5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "potrafi analizować proste problemy programistyczne",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja [SK4] test/egzamin - ustny lub pisemny [SK8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W04] ma uporządkowaną, podbudowaną teoretycznie wiedzę w zakresie programowania, algorytmów i złożoności, języków i paradygmatów programowania",
+                "efekt_z_przedmiotu": "zna podstawowe cechy modelu programowania funkcyjnego, obiektowego oraz asynchronicznego",
+                "sposob_weryfikacji": "[SW4] test/egzamin - ustny lub pisemny [SW5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U09] potrafi zgodnie z zadaną specyfikacją zaprojektować oraz zrealizować system informatyczny",
+                "efekt_z_przedmiotu": "umie dobrać poznane paradygmaty programowania oraz mechanizmy do specyfikacji problemu",
+                "sposob_weryfikacji": "[SU4] test/egzamin - ustny lub pisemny [SU6] demonstracja umiejętności praktycznych [SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U04] potrafi tworzyć, uruchamiać i testować programy przy wykorzystaniu dedykowanych narzędzi oraz wzorców projektowych",
+                "efekt_z_przedmiotu": "potrafi korzystać z podstawowych narzędzi – edytora programistycznego, kompilatora oraz narzędzia wspomagającego proces kompilacji",
+                "sposob_weryfikacji": "[SU6] demonstracja umiejętności praktycznych [SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych aktywność na zajęciach",
+                "prog": "0.0%",
+                "waga": "5.0%"
+            },
+            {
+                "typ": "efektów uczenia się 2 kolokwia programistyczne",
+                "prog": "50.0%",
+                "waga": "95.0%"
+            }
+        ],
+        "program": [
+            "Kurs obejmuje paradygmaty programowania oraz najważniejsze koncepcje oferowane przez współczesne języki programowania.",
+            "Programowanie funkcyjne: niemutowalność, funkcje (w tym jako wartości), rekurencja ogonowa, polimorfim (parametryzacja typem).",
+            "Kolekcje jako rozbudowane, sparametryzowane struktury danych najważniejsze rodzaje oraz udostępniane operacje.",
+            "Podstawowe koncepcje programowania obiektowego obiekty, klasy i interfejsy/cechy, mechanizmy dziedziczenia",
+            "Elementy programowania asynchronicznego. Oprócz wymienionych wyżej mechanizmów językowych, w ramach kursu omawiane/prezentowane będą także podstawowe narzędzia wspomagające tworzenie, testowanie oraz uruchamianie programów."
+        ],
+        "cel": "zapoznanie studentów z najważniejszymi mechanizmami, jakie oferują współczesne języki programowania, wliczając w to elementy programowania funkcyjnego, obiektowego oraz asynchronicznego.",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Języki programowania II",
+        "kod": "PG_00155296",
+        "kierunek": "Informatyka (P)",
+        "ects": "4.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "dr Jakub Neumann",
+        "prowadzacy": [],
+        "godziny": {
+            "wyklad": "30.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "30.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "60h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "40.0h",
+            "razem": "100h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "JavaScript. Przewodnik. Poznaj język mistrzów programowania. aut. David Flanagan, ISBN 9788383227580"
+            ],
+            "uzupelniajaca": [
+                "Composing Software. An Exploration of Functional Programming and Object Composition in JavaScript, Eric Elliott"
+            ]
+        },
+        "ezasoby": [
+            "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        ],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_U09] potrafi zgodnie z zadaną specyfikacją zaprojektować oraz zrealizować system informatyczny",
+                "efekt_z_przedmiotu": "potrafi napisać program wg specyfikacji podanej przy użyciu specjalistycznego języka (pojęcia z obszarów programowania funkcyjnego i obiektowego w języku JavaScript oraz pojęć związanych z asynchronicznością)",
+                "sposob_weryfikacji": "[SU2] prezentacja/projekt/referat/ raport [SU6] demonstracja umiejętności praktycznych [SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W04] ma uporządkowaną, podbudowaną teoretycznie wiedzę w zakresie programowania, algorytmów i złożoności, języków i paradygmatów programowania",
+                "efekt_z_przedmiotu": "ma wiedzę z zakresu programowania obiektowego i funkcyjnego w języku JavaScript, rozumie zasady wnioskowania i pracy z kodem asynchronicznym",
+                "sposob_weryfikacji": "[SW1] wypowiedź ustna/rozmowa/ dyskusja [SW5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U08] ocenia przydatność różnych paradygmatów i narzędzi programistycznych do rozwiązywania problemów różnego typu",
+                "efekt_z_przedmiotu": "potrafi zastosować paradygmaty programowania obiektowego, wie na czym polega hermetyzacja danych i dziedziczenie. Wie czym są funkcje wyższego rzedu, w szczególności rozumie operacje reduce, map, filter, wie na czym polega składanie funkcji oraz zna pojęcie curry w odniesieniu do funkcji, potrafi pracować z kodem asynchronicznym i wykorzystać klasę Promise",
+                "sposob_weryfikacji": "[SU1] wypowiedź ustna/rozmowa/ dyskusja [SU6] demonstracja umiejętności praktycznych"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U04] potrafi tworzyć, uruchamiać i testować programy przy wykorzystaniu dedykowanych narzędzi oraz wzorców projektowych",
+                "efekt_z_przedmiotu": "potrafi napisać program w języku JavaScript, testować jego poprawność w zintegrowanym środowisku programistycznym, potrafi optymalizować kod przy użyciu narzędzi takich jak linter i biblioteki lodash",
+                "sposob_weryfikacji": "[SU1] wypowiedź ustna/rozmowa/ dyskusja [SU6] demonstracja umiejętności praktycznych"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "potrafi z wykorzystaniem specjalistycznego języka brać udział w dyskusji na tema programowania (w szczególności w języku JavaScript), przedstawić rozwiązania zadań podczas code review",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja [SK2] prezentacja/projekt/referat/ raport"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych kolokwia",
+                "prog": "50.0%",
+                "waga": "100.0%"
+            }
+        ],
+        "program": [
+            "Na przykładzie języka JavaScript:",
+            "techniki programowania funkcyjnego: funkcje wyższego rzędu, funkcje zwracające funkcje, wyrażenia lambda, currying",
+            "definicje funkcji reduce, map, filter, składanie funkcji",
+            "tworzenie obiektów",
+            "definiowanie klas, dziedziczenie",
+            "asynchroniczność i typy danych związane z asynchronicznością",
+            "bibloteki lodash, axis",
+            "narzędzia typu linter, babel"
+        ],
+        "cel": "nauka i doskonalenie technik programowania, ze szczególnym uwzględnieniem technik programowania funkcyjnego i obiektowego oraz praca z kodem asynchronicznym.",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Sieci komputerowe (P) (Wykład)",
+        "kod": "PG_00143995",
+        "kierunek": "Informatyka (P)",
+        "ects": "2.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "dr Adam Kostulak",
+        "prowadzacy": [],
+        "godziny": {
+            "wyklad": "15.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "15.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "30h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "20.0h",
+            "razem": "50h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "Multimedialne materiały Cisco: CCNA semestr I Routing & Switching D. Comer, Sieci komputerowe TCP/IP"
+            ],
+            "uzupelniajaca": [
+                "Cisco Networking Academy, Routing and Switching Essentials Companion Guide, Cisco Press, Indianapolis 2022"
+            ]
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_U05] korzysta z zaawansowanych funkcjonalności systemów operacyjnych, w szczególności związanych z aspektami sieciowymi, wirtualizacją, konteneryzacją i innymi technologiami chmurowymi",
+                "efekt_z_przedmiotu": "Ma wiedzę na temat systemów operacyjnych, technologii sieciowych, w tym podstawowych protokołów komunikacyjnych",
+                "sposob_weryfikacji": "[SU4] test/egzamin - ustny lub pisemny"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K01] zna ograniczenia własnej wiedzy i rozumie potrzebę dalszego kształcenia",
+                "efekt_z_przedmiotu": "Ma świadomość dynamicznego rozwoju technologii sieciowych i konieczności aktualizacji wiedzy w tym obszarze",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W06] ma wiedzę na temat systemów operacyjnych, technologii sieciowych, w tym podstawowych protokołów komunikacyjnych w sieci Web",
+                "efekt_z_przedmiotu": "Wymienia oraz definiuje protokoły używane w sieciach LAN Charakteryzuje protokoły routingu RIP, OSPF, EIGRP",
+                "sposob_weryfikacji": "[SW4] test/egzamin - ustny lub pisemny"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U02] potrafi pozyskiwać informacje z literatury, Internetu oraz innych źródeł, integrować je, oceniać ich wiarygodność, dokonywać interpretacji oraz wyciągać wnioski i formułować opinie",
+                "efekt_z_przedmiotu": "Potrafi poszerzać i ugruntowywać wiedzę na temat systemów operacyjnych i technologii sieciowych",
+                "sposob_weryfikacji": "[SU2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "Efektywnie wykorzystuje kontakt z prowadzącym przy projektowaniu infrastruktur sieciowych",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U06] potrafi dbać o bezpieczeństwo danych, w tym o ich bezpieczne przesyłanie; posługuje się narzędziami szyfrowania danych",
+                "efekt_z_przedmiotu": "Wymienia i charakteryzuje komponenty bezpieczeństwa sieci lokalnej",
+                "sposob_weryfikacji": "[SU4] test/egzamin - ustny lub pisemny"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych kolokwium 1",
+                "prog": "50.0%",
+                "waga": "50.0%"
+            },
+            {
+                "typ": "efektów uczenia się kolokwium 2",
+                "prog": "50.0%",
+                "waga": "50.0%"
+            }
+        ],
+        "program": [
+            "Sieci TCP/IP Protokoły sieciowe i komunikacja Urządzenia sieciowe - koncentratory ,mosty, przełączniki, routery Dostęp do sieci - adresacja MAC, protokół ARP, STP Technologia Ethernet, rodzaje okablowania Warstwa sieci- routing statyczny, dynamiczny - RIP, OSPF, EIGRP Technologia VLAN Warstwa transportowa - protokoły TCP i UDP Adresacja IP ver. 4 i 6 Warstwa aplikacji, serwery WWW, DNS, MAIL, DHCP, NAT Bezpieczeństwo sieci"
+        ],
+        "cel": "Przedstawienie zasad funkcjonowania sieci komputerowych, stosowanych w nich urządzeń i protokołów komunikacyjnych oraz oferowanych przez nie usług. przygotowanie studentów do tworzenia topologii, konfiguracji oraz diagnostyki sieci zbudowanych z wykorzystaniem routerów i przełączników Cisco przygotowanie do certyfikacji Cisco Certified Network Associate (CCNA) w zakresie semestru I Routing & Switching wraz z uzyskaniem certyfikatu ukończenia kursu.",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Systemy operacyjne (Wykład)",
+        "kod": "PG_00143996",
+        "kierunek": "Informatyka (P)",
+        "ects": "6.0",
+        "forma_zaliczenia": "egzamin",
+        "odpowiedzialny": "mgr Łukasz Mielewczyk",
+        "prowadzacy": [],
+        "godziny": {
+            "wyklad": "30.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "30.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "60h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "90.0h",
+            "razem": "150h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "A. S. Tanenbaum, Systemy operacyjne. Wydanie IV, tłumaczenie: R. Meryk; M Szczepaniak, Helion, Gliwice",
+                "R. Love, Linux. Programowanie systemowe. Wydanie II, tłumaczenie: J. Janusz, Helion, Gliwice",
+                "M. G. Sobell, Linux. Programowanie w powłoce. Praktyczny przewodnik. Wydanie III, tłumaczenie: R. Górczyński, Helion, Warszawa",
+                "A. Silberschatz; P. B. Galvin, Podstawy systemów operacyjnych, Wydawnictwa Naukowo-Techniczne, Warszawa",
+                "N. Matthew; R. Stones, Linux Programowanie, Wydawnictwo RM, Warszawa",
+                "M. Bach, Budowa Systemu Operacyjnego UNIX, Wydawnictwa Naukowo-Techniczne, Warszawa 1995"
+            ],
+            "uzupelniajaca": [
+                "E. Nemeth; G. Snyder; T. R. Hein; B. Whaley; D. Mackin , Unix i Linux. Przewodnik administratora systemów. Wydanie V, tłumaczenie: L. Sagalara, Helion, Gliwice",
+                "K. Kuźniar; K. Lal; T. Rak , Programowanie w Linuksie. Ćwiczenia, Helion, Gliwice",
+                "J. Fusco, Linux. Niezbędnik programisty , tłumaczenie: M. Szczepaniak, Helion, Gliwice",
+                "M. K. Johnson; E. W. Troan, Oprogramowanie użytkowe w systemie Linux, Wydawnictwa Naukowo-Techniczne, Warszawa"
+            ]
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_K01] zna ograniczenia własnej wiedzy i rozumie potrzebę dalszego kształcenia",
+                "efekt_z_przedmiotu": "potrafi korzystać z dokumentacji online oraz narzędzi, systemu operacyjnego Linux, które służą do uzyskiwania pomocy i dokumentacji na temat innych poleceń i programów.",
+                "sposob_weryfikacji": "[SK8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U05] korzysta z zaawansowanych funkcjonalności systemów operacyjnych, w szczególności związanych z aspektami sieciowymi, wirtualizacją, konteneryzacją i innymi technologiami chmurowymi",
+                "efekt_z_przedmiotu": "potrafi posługiwać się systemem operacyjnym Linux z poziomu wiersza poleceń i interfejsu graficznego.",
+                "sposob_weryfikacji": "[SU4] test/egzamin - ustny lub pisemny [SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W06] ma wiedzę na temat systemów operacyjnych, technologii sieciowych, w tym podstawowych protokołów komunikacyjnych w sieci Web",
+                "efekt_z_przedmiotu": "zna polecenia, które służą do wykonywania poleceń systemowych, najważniejsze elementy, związane z architekturą systemów komputerowych oraz zasady działania systemu operacyjnego.",
+                "sposob_weryfikacji": "[SW4] test/egzamin - ustny lub pisemny"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "potrafi korzystać z dokumentacji online oraz narzędzi, systemu operacyjnego Linux, które służą do uzyskiwania pomocy i dokumentacji na temat innych poleceń i programów.",
+                "sposob_weryfikacji": "[SK8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U02] potrafi pozyskiwać informacje z literatury, Internetu oraz innych źródeł, integrować je, oceniać ich wiarygodność, dokonywać interpretacji oraz wyciągać wnioski i formułować opinie",
+                "efekt_z_przedmiotu": "potrafi korzystać z dokumentacji online oraz narzędzi, systemu operacyjnego Linux, które służą do uzyskiwania pomocy i dokumentacji na temat innych poleceń i programów.",
+                "sposob_weryfikacji": "[SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych wykład - egzamin",
+                "prog": "51.0%",
+                "waga": "50.0%"
+            },
+            {
+                "typ": "efektów uczenia się ćwiczenia laboratoryjne - kolokwia",
+                "prog": "51.0%",
+                "waga": "50.0%"
+            }
+        ],
+        "program": [
+            "1. Funkcje systemu operacyjnego, organizacja i architektura systemu operacyjnego, struktura i działanie systemu operacyjnego, standard POSIX, struktura jądra systemu operacyjnego. 2. Historia systemów operacyjnych: początku powstania systemów komputerowych i systemów operacyjnych. 3. Rodzaje systemów operacyjnych: systemy wieloprocesorowe, systemy wsadowe, systemy czasu rzeczywistego, 4. System plików Linuxa: rodzaje plików, metody dostępu, struktura katalogów systemowych, podstawy zarządzania systemem plików. 5. Powłoka Bash: pliki startowe, zmienne środowiskowe, interpreter poleceń, programowanie skryptów. 6. Zarządzanie kontami użytkowników i autoryzacją w Linux: pliki konfiguracyjne, moduł PAM. 7. Procesy i wątki: koncepcja procesu, działanie procesów, komunikacja międzyprocesowa; zarządzanie wątkami, podstawy programowania współbieżnego. 8. Synchronizacja procesów i wątków: sekcja krytyczna, sposoby synchronizacji, klasyczne problemy synchronizacji. 9. Podstawowe elementy systemów komputerowych: podstawowe funkcje i elementy procesora, rodzaje i funkcje pamięci komputerowej. 10. Pamięć operacyjna: pamięć ogólna i wirtualna, segmentacja, tablica deskryptorów, stronicowanie, przykłady zarządzania pamięcią operacyjną. 11. Zarządzanie dyskami: formatowanie niskopoziomowe, formatowanie wysokopoziomowe, partycjonowanie, defragmentacja; zarządzanie, macierze niezależnych dysków (RAID). 12. Rozruch systemu komputerowego: program rozruchowy, oprogramowanie sprzętowe (ang. firmware), odpowiedzialne za inicjalizacje i zarządzanie sprzętem. 13. Zarządzanie zasobami: szeregowanie procesów, problemy związane z zakleszczeniami zasobów. 14. Ochrona i bezpieczeństwo: cele i zasady ochrony systemów operacyjnych i systemów komputerowych, techniki ataków na systemy operacyjne, techniki ataków poprzez złośliwe oprogramowanie. 15. Monitorowanie i zarządzanie zdarzeniami: rejestracja plików dzienników w Linux, przykładowe narzędzia monitorowania i zarządzania zdarzeniami. 16. Wirtualizacja: techniki wirtualizacji, sposoby działania hipernadzorcy."
+        ],
+        "cel": "zapoznanie studentów z zasadami działania i metodami obsługi systemów operacyjnych oraz podstawami programowania systemowego.",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Testowanie automatyczne (P) (Wykład)",
+        "kod": "PG_00143998",
+        "kierunek": "Informatyka (P)",
+        "ects": "3.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "dr Tomasz Borzyszkowski",
+        "prowadzacy": [],
+        "godziny": {
+            "wyklad": "15.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "30.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "45h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "30.0h",
+            "razem": "75h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "Beck Kent, TDD. Sztuka tworzenia dobrego kodu Wydawnictwo Helion,",
+                "Harry J.W. Percival. TDD w praktyce. Niezawodny kod w języku Python. Wydawnictwo Helion,"
+            ],
+            "uzupelniajaca": []
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_U04] potrafi tworzyć, uruchamiać i testować programy przy wykorzystaniu dedykowanych narzędzi oraz wzorców projektowych",
+                "efekt_z_przedmiotu": "korzysta z zaawansowanych funkcjonalności systemów operacyjnych, w szczególności związanych z aspektami sieciowymi, wirtualizacją, konteneryzacją i innymi technologiami chmurowymi",
+                "sposob_weryfikacji": "[SU2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W07] ma wiedzę w zakresie projektowania, wytwarzania, testowania, wdrażania i utrzymania aplikacji webowych oraz ich bezpieczeństwa",
+                "efekt_z_przedmiotu": "ma wiedzę w zakresie wykorzystania narzędzi i środowisk wytwarzania, testowania i utrzymania oprogramowania",
+                "sposob_weryfikacji": "[SW2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W08] ma wiedzę w zakresie wykorzystania narzędzi i środowisk wytwarzania, testowania i utrzymania oprogramowania",
+                "efekt_z_przedmiotu": "ma wiedzę w zakresie projektowania, wytwarzania, testowania, wdrażania i utrzymania aplikacji webowych oraz ich bezpieczeństwa",
+                "sposob_weryfikacji": "[SW2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "sposob_weryfikacji": "[SK8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych wykonanie doświadczeń",
+                "prog": "50.0%",
+                "waga": "90.0%"
+            },
+            {
+                "typ": "efektów uczenia się aktywność na zajeciach",
+                "prog": "0.0%",
+                "waga": "10.0%"
+            }
+        ],
+        "program": [
+            "Metodologie i rodzaje testów oprogramowania (piramida testów) Planowanie testów oprogramowania w ramach cyklu jego wytwarzania (formułowanie scenariuszy testowych) Automatyzacja testów: - narzędzia automatyzacji - testy automatyczne jako sposób zapewnienia jakości w cyklu wytwarzania oprogramowania - integracja testów automatycznych w proces wdrożenia"
+        ],
+        "cel": "Zapoznanie z nowoczesnymi metodami zapewniania jakości w projektach informatycznych poprzez testowanie i walidację oprogramowania.Poznanie wymagań stawianych systemom informatycznym (np. dostępność, wydajność) oraz narzędzi wspierających automatyczne testowanie oprogramowanie. Zapoznanie z praktykami stosowanymi w ramach automatyzacji różnego typu testów (np. testy jednostkowe, integracyjne, interfejsu użytkownika).",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Warsztat programisty (P) (Ćw. laboratoryjne)",
+        "kod": "PG_00143999",
+        "kierunek": "Informatyka (P)",
+        "ects": "4.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "mgr Michał Zakrzewski",
+        "prowadzacy": [
+            "mgr Michał Zakrzewski",
+            "mgr Mateusz Miotk"
+        ],
+        "godziny": {
+            "wyklad": "0.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "30.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "30h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "70.0h",
+            "razem": "100h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "S. Chacon, B. Straub, Pro Git, Wydawnictwo Apress,",
+                "W. E. Shotts, The Linux Command Line: A Complete Introduction, 2nd ed. San Francisco, CA: No Starch Press,",
+                "Ł. Sosna, Linux. Komendy i polecenia, Wydawnictwo Helion,",
+                "M. G. Sobell, Linux. Programowanie w powłoce. Praktyczny przewodnik, Wydawnictwo Helion,"
+            ],
+            "uzupelniajaca": [
+                "D. J. Barrett, Efficient Linux at the Command Line: Boost Your Command-Line Skills, O'Reilly Media,",
+                "R. Blum and C. Bresnahan, Linux Command Line and Shell Scripting Bible, 3rd ed. Hoboken, NJ: John Wiley & Sons,"
+            ]
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_W04] ma uporządkowaną, podbudowaną teoretycznie wiedzę w zakresie programowania, algorytmów i złożoności, języków i paradygmatów programowania",
+                "efekt_z_przedmiotu": "Student zna pojęcia związane z podstawowymi komendami terminalu Linux. Student zna zasady tworzenia i wykonywania skryptów w Bash. Student zna podstawy obsługi systemu kontroli wersji git, takie jak tworzenie i usuwanie repozytorium, dodawanie, usuwanie i commitowanie zmian oraz rozwiązywanie konfliktów. Student zna pojęcie wyrażenia regularnego i ich składnię oraz umiejętność ich wykorzystywania do przetwarzania plików tekstowych.",
+                "sposob_weryfikacji": "[SW4] test/egzamin - ustny lub pisemny [SW5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W08] ma wiedzę w zakresie wykorzystania narzędzi i środowisk wytwarzania, testowania i utrzymania oprogramowania",
+                "efekt_z_przedmiotu": "Student zna pojęcia związane z podstawowymi komendami terminalu Linux Student zna zasady tworzenia i wykonywania skryptów w Bash. Student zna podstawy obsługi systemu kontroli wersji git, takie jak tworzenie i usuwanie repozytorium, dodawanie, usuwanie i commitowanie zmian oraz rozwiązywanie konfliktów. Student zna pojęcie wyrażenia regularnego i ich składnię oraz umiejętność ich wykorzystywania do przetwarzania plików tekstowych.",
+                "sposob_weryfikacji": "[SW4] test/egzamin - ustny lub pisemny [SW5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U03] potrafi pracować w zespole informatyków, zarządzać swoim czasem oraz podejmować zobowiązania i dotrzymywać terminy, porozumiewać się przy użyciu różnych technik w środowisku zawodowym w tym z wykorzystaniem dedykowanych narzędzi",
+                "efekt_z_przedmiotu": "Student potrafi korzystać z podstawowych poleceń powłoki Linux Student potrafi napisać w edytorze i uruchomić prosty skrypt w Bash’u Student umie utworzyć repozytorium i nim zarządzać Student potrafi pracować w zespole informatyków, zarządzać swoim czasem oraz podejmować zobowiązania i dotrzymywać terminy, porozumiewać się przy użyciu różnych technik w środowisku zawodowym w tym z wykorzystaniem dedykowanych narzędzi",
+                "sposob_weryfikacji": "[SU4] test/egzamin - ustny lub pisemny [SU5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "Student potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania. Student potrafi pracować w zespole informatycznym i potrafi porozumiewać się z pozostałymi członkami zespołu.",
+                "sposob_weryfikacji": "[SK4] test/egzamin - ustny lub pisemny [SK5] realizacja zadania problemowego"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych rozwiązywanie zadań",
+                "prog": "50.0%",
+                "waga": "40.0%"
+            },
+            {
+                "typ": "efektów uczenia się praktycznych kolokwium",
+                "prog": "50.0%",
+                "waga": "60.0%"
+            }
+        ],
+        "program": [
+            "1. Wprowadzenie do systemu operacyjnego Linux: historia systemu operacyjnego Linux oraz podstawowe komendy w terminalu Linux 2. Obsługa terminala w Linuxie: praca z konsolą, zarządzanie plikami i katalogami, przekierowanie strumieni wejścia/wyjścia, tworzenie i edycja plików w terminalu 3. Podstawowa obsługa polecenia git: wprowadzenie do systemu kontroli wersji git, tworzenie repozytorium git,podstawowe operacje na repozytorium git (dodawanie, usuwanie, klonowanie), commitowanie zmian w repozytorium git, rozwiązywanie konfliktów w repozytorium git 4. Wyrażenia regularne: wprowadzenie do wyrażeń regularnych, składnia i zasady pisania wyrażeń regularnych, użycie wyrażeń regularnych w terminalu Linux, zastosowanie wyrażeń regularnych 5. Operacje na plikach tekstowych: przetwarzanie plików tekstowych w terminalu Linux, filtrowanie zawartości plików tekstowych, sortowanie i łączenie plików tekstowych 6. Pisanie skryptów w Bash: wprowadzenie do Bash, zmienne i stałe w Bash, pętle i warunki w Bash, funkcje w Bash oraz interakcja z użytkownikiem w Bash 7. Gałęzie w systemie kontroli wersji git: wprowadzenie do gałęzi w systemie kontroli wersji git, tworzenie i usuwanie gałęzi w repozytorium git, praca na gałęziach w repozytorium git, łączenie gałęzi w repozytorium git (merge), rozwiązywanie konfliktów połączenia gałęzi w repozytorium git,pobieranie i aktualizacja zmian z repozytorium git"
+        ],
+        "cel": "Rozwinięcie praktycznych umiejętności niezbędnych do efektywnej pracy w środowisku systemów Unix/ Linux. Zostaną przekazane techniki zarządzania plikami i katalogami za pomocą terminala, a także podstawowe operacje systemowe. Moduł poświęcony pisaniu skryptów w powłoce Linux umożliwi automatyzację często powtarzalnych zadań. W ramach przedmiotu omówione zostaną także umiejętności związane z systemem kontroli wersji git, w tym tworzenie i zarządzanie gałęziami, comitowanie zmian oraz pobieranie aktualizacji z repozytorium zdalnego.",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Współczesne zastosowania informatyki (Wykład)",
+        "kod": "PG_00143984",
+        "kierunek": "Informatyka (P)",
+        "ects": "2.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "dr Jakub Neumann",
+        "prowadzacy": [],
+        "godziny": {
+            "wyklad": "30.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "15.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "45h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "5.0h",
+            "razem": "50h"
+        },
+        "literatura": {
+            "podstawowa": [],
+            "uzupelniajaca": []
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_K06] potrafi formułować opinie na temat podstawowych zagadnień informatycznych",
+                "efekt_z_przedmiotu": "na podstawie uczestnictwa w wykładach oraz prezentacji zespołu potrafi formułować opinie na temat podstawowych zagadnień informatycznych",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja [SK2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W07] ma wiedzę w zakresie projektowania, wytwarzania, testowania, wdrażania i utrzymania aplikacji webowych oraz ich bezpieczeństwa",
+                "efekt_z_przedmiotu": "na wykładach prowadzonych przez specjalistów IT zdobywa wiedzę nt. projektowania, wytwarzania, testowania, wdrażania i utrzymania aplikacji webowych oraz ich bezpieczeństwa",
+                "sposob_weryfikacji": "[SW1] wypowiedź ustna/rozmowa/ dyskusja [SW2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U03] potrafi pracować w zespole informatyków, zarządzać swoim czasem oraz podejmować zobowiązania i dotrzymywać terminy, porozumiewać się przy użyciu różnych technik w środowisku zawodowym w tym z wykorzystaniem dedykowanych narzędzi",
+                "efekt_z_przedmiotu": "przygotowując prezentacje potrafi pracować w zespole informatyków, zarządzać swoim czasem oraz podejmować zobowiązania i dotrzymywać terminy, porozumiewać się przy użyciu różnych technik w środowisku zawodowym w tym z wykorzystaniem dedykowanych narzędzi",
+                "sposob_weryfikacji": "[SU1] wypowiedź ustna/rozmowa/ dyskusja [SU2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U02] potrafi pozyskiwać informacje z literatury, Internetu oraz innych źródeł, integrować je, oceniać ich wiarygodność, dokonywać interpretacji oraz wyciągać wnioski i formułować opinie",
+                "efekt_z_przedmiotu": "przygotowując prezentacje potrafi pozyskiwać informacje z literatury, Internetu oraz innych źródeł, integrować je, oceniać ich wiarygodność, dokonywać interpretacji oraz wyciągać wnioski i formułować opinie podczas dyskusji po prezentacji własnej oraz innych grup",
+                "sposob_weryfikacji": "[SU2] prezentacja/projekt/referat/ raport [SU6] demonstracja umiejętności praktycznych"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K03] rozumie potrzebę i docenia zalety pracy zespołowej, rozumie konieczność systematycznej pracy nad zespołowymi projektami informatycznymi",
+                "efekt_z_przedmiotu": "na podstawie uczestnictwa w wykładach oraz prezentacji zespołu poznaje ograniczenia własnej wiedzy i rozumie potrzebę dalszego kształcenia",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja [SK2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_K01] zna ograniczenia własnej wiedzy i rozumie potrzebę dalszego kształcenia",
+                "efekt_z_przedmiotu": "na podstawie uczestnictwa w wykładach oraz własnych prezentacji poznaje ograniczenia własnej wiedzy i rozumie potrzebę dalszego kształcenia",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja [SK2] prezentacja/projekt/referat/ raport"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych prezentacja",
+                "prog": "50.0%",
+                "waga": "100.0%"
+            }
+        ],
+        "program": [
+            "Wykład: prezentacje i dyskusje prowadzona przez specjalistów branży IT, dotyczące innowacyjnych, nowoczesnych rozwiązań i produktów tych firm Laboratoria: praca ze studentami w grupach nad prezentacją poświęcona ich zainteresowaniom informatycznym lub ich projektem-koncepcją: produkt lub rozwiązanie informatyczne przyszłości, innowacyjne lub rozwiązujące ważne problemy np. społeczne (sam projekt nie będzie realizowany na zajęciach ale dokładnie dyskutowany w przeróżnych aspektach, także biznesowych) Publiczna prezentacja wybranych, najciekawszych projektów"
+        ],
+        "cel": "Zasadniczym celem przedmiotu jest wzbudzenie pasji do informatyki oraz przedstawienie zalet pracy grupowej na wczesnym etapie kształcenia. Wykłady (w formie prezentacji i dyskusji) będą prowadzone przez specjalistów z firm branży IT i będą pokazywały możliwie innowacyjne, nowoczesne rozwiązania, produkty lub osiągniecia tych firm. Studenci pracując w grupach przygotują prezentacje nt. własnych zainteresowań informatycznych",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Wstęp do programowania",
+        "kod": "PG_00143983",
+        "kierunek": "Informatyka (P)",
+        "ects": "7.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "dr Jakub Neumann",
+        "prowadzacy": [
+            "mgr Grzegorz Madejski",
+            "dr inż. Anna Nenca",
+            "mgr Radosław Ziemann",
+            "mgr Laura Grzonka",
+            "dr Jakub Neumann"
+        ],
+        "godziny": {
+            "wyklad": "15.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "45.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "60h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "115.0h",
+            "razem": "175h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "Python.  Wprowadzenie. Wydanie V, aut. Mark Lutz, ISBN: 9788328391697"
+            ],
+            "uzupelniajaca": [
+                "Python.  Nowoczesne programowanie w prostych, aut. Bill Lubanovic, ISBN: 9788328368422"
+            ]
+        },
+        "ezasoby": [
+            "https://python-course.eu/",
+            "https://www.python.org/"
+        ],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "potrafi posługiwać się pojęciami z zakresu technik programowania, używać pojęć takich jak: funkcja, lista parametrów, wartość zwracana, warunek zakończenia pętli, kryteria poprawności wykonania funkcji",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja [SK2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W04] ma uporządkowaną, podbudowaną teoretycznie wiedzę w zakresie programowania, algorytmów i złożoności, języków i paradygmatów programowania",
+                "efekt_z_przedmiotu": "w trakcie zajęć poznaje: podstawowe konstrukcje programistyczne (instrukcja warunkowa, pętle), podstawowe typy danych (liczbowe, boolowskie, łańcuchy znakowe), zakres deklaracji i widoczność zmiennych ( zmienne lokalne i globalne) poznaje zasady budowania poprawnych funkcji (sposób określania parametrów i wartości zwracanych), poznaje struktury danych i operacja na nich (listy, słowniki)",
+                "sposob_weryfikacji": "[SW1] wypowiedź ustna/rozmowa/ dyskusja [SW5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U03] potrafi pracować w zespole informatyków, zarządzać swoim czasem oraz podejmować zobowiązania i dotrzymywać terminy, porozumiewać się przy użyciu różnych technik w środowisku zawodowym w tym z wykorzystaniem dedykowanych narzędzi",
+                "efekt_z_przedmiotu": "potrafi, zgodnie z podaną specyfikacją (treścią zadań) i w założonym terminie zrealizować zadanie programistyczne, omówić na forum grupy swoje i cudze rozwiązanie podczas code review",
+                "sposob_weryfikacji": "[SU1] wypowiedź ustna/rozmowa/ dyskusja [SU2] prezentacja/projekt/referat/ raport"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U04] potrafi tworzyć, uruchamiać i testować programy przy wykorzystaniu dedykowanych narzędzi oraz wzorców projektowych",
+                "efekt_z_przedmiotu": "potrafi tworzyć, uruchamiać i testować programy w dedykowanym narzędziu typu zintegrowane środowisko programistyczne lub wyspecjalizowany edytor, potrafi zainstalować i skonfigurować swoje środowisko pracy",
+                "sposob_weryfikacji": "[SU1] wypowiedź ustna/rozmowa/ dyskusja [SU5] realizacja zadania problemowego [SU6] demonstracja umiejętności praktycznych"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych projekt",
+                "prog": "50.0%",
+                "waga": "20.0%"
+            },
+            {
+                "typ": "efektów uczenia się wejściówki",
+                "prog": "50.0%",
+                "waga": "20.0%"
+            },
+            {
+                "typ": "kolokwia",
+                "prog": "60.0%",
+                "waga": "60.0%"
+            }
+        ],
+        "program": [
+            "Programy w różnych sposobach zapisu (opis słowny, instrukcje języka programowania). Ręczna symulacja działania algorytmu.",
+            "Środowisko programistyczne, uruchamianie i debuggowanie programów",
+            "Zmienne i podstawowe typy danych. Zakres deklaracji i widoczność zmiennych, zmienne lokalne i globalne",
+            "Podstawowe sterujące konstrukcje programistyczne: instrukcje warunkowe, pętle (w tym zagnieżdżone)",
+            "Funkcje, parametry, wartość zwracana, czyste funkcje",
+            "Podstawowe struktury danych: listy, słowniki",
+            "Obsługa błędów"
+        ],
+        "cel": "zapoznanie studentów z podstawowymi konstrukcjami i technikami programistycznymi (typy danych, instrukcja warunkowa, pętle, funkcje), strukturami danych (listy, słowniki) oraz zdobycie umiejętności projektowania, analizy i implementacji prostych algorytmów.",
+        "praktyki": "Nie dotyczy"
+    },
+    {
+        "nazwa": "Wstęp do technologii Web",
+        "kod": "PG_00143982",
+        "kierunek": "Informatyka (P)",
+        "ects": "3.0",
+        "forma_zaliczenia": "zaliczenie",
+        "odpowiedzialny": "mgr Aleksandra Tejszerska-Rzeźnik",
+        "prowadzacy": [
+            "mgr Aleksandra Tejszerska-Rzeźnik",
+            "mgr Mateusz Miotk",
+            "mgr Łukasz Mielewczyk"
+        ],
+        "godziny": {
+            "wyklad": "15.0h",
+            "cwiczenia": "0.0h",
+            "laboratorium": "15.0h",
+            "projekt": "0.0h",
+            "seminarium": "0.0h"
+        },
+        "aktywnosc_studenta": {
+            "zajecia_dydaktyczne": "30h",
+            "konsultacje": "0.0h",
+            "praca_wlasna": "45.0h",
+            "razem": "75h"
+        },
+        "literatura": {
+            "podstawowa": [
+                "Brak literatury obowiązkowej/wymaganej"
+            ],
+            "uzupelniajaca": [
+                "David Sawyer McFarland, CSS. Nieoficjalny podręcznik. Wydanie IV, Helion,",
+                "Alex Libby, Learning Less.js, PACKT Publishing,",
+                "Jon Duckett, HTML i CSS. Zaprojektuj i zbuduj witrynę WWW. Podręcznik Front-End Developera, Helion,",
+                "Oficjalna dokumentacja MDN Web Docs",
+                "Oficjalna dokumentacja SCSS"
+            ]
+        },
+        "ezasoby": [],
+        "efekty_uczenia": [
+            {
+                "efekt_kierunkowy": "[INFL3_K02] potrafi precyzyjnie formułować pytania, służące pogłębieniu własnego zrozumienia danego tematu lub odnalezieniu brakujących elementów rozumowania",
+                "efekt_z_przedmiotu": "Student potrafi wykorzystać umiejętność precyzyjnego formułowania pytań w praktycznych zadaniach, takich jak projekty, case studies, czy dyskusje grupowe.",
+                "sposob_weryfikacji": "[SK1] wypowiedź ustna/rozmowa/ dyskusja [SK5] realizacja zadania problemowego"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U03] potrafi pracować w zespole informatyków, zarządzać swoim czasem oraz podejmować zobowiązania i dotrzymywać terminy, porozumiewać się przy użyciu różnych technik w środowisku zawodowym w tym z wykorzystaniem dedykowanych narzędzi",
+                "efekt_z_przedmiotu": "Student potrafi planować i organizować swoje zadania w taki sposób, aby efektywnie zarządzać czasem i zasobami.",
+                "sposob_weryfikacji": "[SU5] realizacja zadania problemowego [SU6] demonstracja umiejętności praktycznych [SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_U02] potrafi pozyskiwać informacje z literatury, Internetu oraz innych źródeł, integrować je, oceniać ich wiarygodność, dokonywać interpretacji oraz wyciągać wnioski i formułować opinie",
+                "efekt_z_przedmiotu": "Student potrafi ocenić wiarygodność i rzetelność pozyskanych informacji, uwzględniając ich źródło i kontekst.",
+                "sposob_weryfikacji": "[SU1] wypowiedź ustna/rozmowa/ dyskusja [SU4] test/egzamin - ustny lub pisemny [SU5] realizacja zadania problemowego [SU6] demonstracja umiejętności praktycznych [SU8] obserwacja samodzielnej lub zespołowej pracy studenta"
+            },
+            {
+                "efekt_kierunkowy": "[INFL3_W07] ma wiedzę w zakresie projektowania, wytwarzania, testowania, wdrażania i utrzymania aplikacji webowych oraz ich bezpieczeństwa",
+                "efekt_z_przedmiotu": "Student potrafi używać prostych narzędzi do projektowania stron, takich jak edytory HTML i CSS.",
+                "sposob_weryfikacji": "[SW4] test/egzamin - ustny lub pisemny [SW1] wypowiedź ustna/rozmowa/ dyskusja [SW2] prezentacja/projekt/referat/ raport [SW5] realizacja zadania problemowego"
+            }
+        ],
+        "ocenianie": [
+            {
+                "typ": "oceniania osiąganych aktywność na zajęciach",
+                "prog": "0.0%",
+                "waga": "5.0%"
+            },
+            {
+                "typ": "efektów uczenia się kolokwium",
+                "prog": "51.0%",
+                "waga": "95.0%"
+            }
+        ],
+        "program": [
+            "Język HTML5",
+            "Kaskadowe arkusze stylów - CSS",
+            "CSS - Box model",
+            "SCSS (vs CSS)",
+            "Pozycjonowanie",
+            "Grid CSS",
+            "Flexbox",
+            "Media queries"
+        ],
+        "cel": "Przedmiot ma na celu zapoznanie studentów z elementarnymi technologiami i narzędziami związanymi z programowaniem webowym, znajdującymi następnie zastosowanie w wielu innych dziedzinach.",
+        "praktyki": "Nie dotyczy"
+    }
+]
