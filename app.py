@@ -33,7 +33,7 @@ if prompt := st.chat_input("Napisz swoje pytanie tutaj..."):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        with st.spinner("Przygotowywuję odpowiedź..."):
+        with st.spinner("Przygotowuję odpowiedź..."):
             try:
                 response = st.session_state.bot.ask(prompt)
                 st.markdown(response)
