@@ -26,25 +26,36 @@ class SyllabusChatbot:
             history_str += f"{msg['role']}: {msg['content']}\n"
 
         system_prompt = (
-            "Jesteś TYLKO I WYŁĄCZNIE precyzyjnym routerem. Twoim jedynym zadaniem jest wyciągnięcie nazwy przedmiotu z zapytania.\n"
-            "MASZ ABSOLUTNY ZAKAZ ODPOWIADANIA NA PYTANIA STUDENTA. Nie wolno Ci pisać, kto prowadzi przedmiot, ani ile ma ECTS.\n\n"
-            f"Baza przedmiotów: {', '.join(self.course_names)}\n\n"
-            "ZASADY (ZWRÓĆ TYLKO JEDNĄ Z PONIŻSZYCH WARTOŚCI, NIC WIĘCEJ):\n"
-            "1. GLOBALNE - pytania o wszystkie przedmioty.\n"
-            "2. WIELE - pytania ogólne (np. samo 'programowanie').\n"
-            "3. [PEŁNA NAZWA Z BAZY] - Jeśli wiesz o jaki przedmiot chodzi. Zwróć SAMĄ NAZWĘ, nic więcej. UWAGA: Jeśli student używa zaimków (np. 'ten przedmiot', 'a kto go prowadzi?'), MUSISZ spojrzeć w Historię Rozmowy i wywnioskować, o czym rozmawialiście sekundę temu, a następnie zwrócić pełną nazwę tego przedmiotu.\n"
-            "4. BRAK - Tylko gdy pytanie nie dotyczy nauki (np. 'cześć').\n\n"
-            "Historia rozmowy:\n"
-            f"{history_str}\n"
+            "Jesteś zaawansowanym systemem kategoryzacji zapytań (Routerem) dla asystenta Dziekanatu.\n"
+            "Twoim zadaniem jest ekstrakcja intencji użytkownika i dopasowanie jej do bazy wiedzy.\n\n"
+            f"Dostępna baza przedmiotów: {', '.join(self.course_names)}\n\n"
+            "ZASADY KATEGORYZACJI:\n"
+            "- Zwróć DOKŁADNĄ NAZWĘ PRZEDMIOTU z bazy, jeśli zapytanie dotyczy konkretnego kursu.\n"
+            "- UWAGA NA ZAIMKI: Jeśli użytkownik używa słów typu 'ten przedmiot', 'kto to prowadzi', "
+            "MUSISZ sprawdzić w Historii Konwersacji, o jakim przedmiocie była mowa i zwrócić jego nazwę.\n"
+            "- Zwróć 'GLOBALNE', jeśli zapytanie wymaga przeanalizowania całej bazy (np. pytania o statystyki, porównania, kto prowadzi najwięcej zajęć, podsumowania ECTS czy ogólną listę przedmiotów).\n"
+            "- Zwróć 'WIELE', jeśli zapytanie jest zbyt ogólne i pasuje do więcej niż jednego przedmiotu (np. 'programowanie').\n"
+            "- Zwróć 'BRAK', jeśli zapytanie to luźna konwersacja (np. przywitanie) lub temat niezwiązany ze studiami.\n\n"
+            "FORMAT WYJŚCIOWY:\n"
+            "Masz zakaz używania jakichkolwiek innych słów. Zwróć wyłącznie jeden z powyższych identyfikatorów."
+        )
+        
+        user_prompt = (
+            "Historia Konwersacji:\n"
+            "<historia>\n"
+            "{history}\n"
+            "</historia>\n\n"
+            "Najnowsze zapytanie użytkownika: {query}"
         )
         
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
-            ("user", "Najnowsze pytanie: {query}")
+            ("user", user_prompt)
         ])
         
-        chain = prompt | self.llm
-        response = chain.invoke({"query": user_query})
+        chain = prompt | self.llm    
+        response = chain.invoke({"history": history_str, "query": user_query})
+        
         return response.content.strip()
 
     def ask(self, user_query: str) -> str:
@@ -54,19 +65,13 @@ class SyllabusChatbot:
         print(f"\n[DEBUG ROUTERA] Zidentyfikowano jako: {matched_course}")
         
         if matched_course == "WIELE":
-            output_text = (
-                "Twoje zapytanie pasuje do kilku przedmiotów (mamy np. Wstęp do programowania, "
-                "Języki programowania I oraz Języki programowania II). Sprecyzuj, o który dokładnie Ci chodzi."
-            )
-            self._update_memory(user_query, output_text)
-            return output_text
+            context_str = f"[ZAPYTANIE NIEJEDNOZNACZNE]. Lista dostępnych przedmiotów w bazie: {', '.join(self.course_names)}."
             
         elif matched_course == "GLOBALNE":
-            summary = [{"nazwa": c["nazwa"], "ects": c["ects"]} for c in self.database]
-            context_str = "Lista wszystkich dostępnych przedmiotów i ich ECTS:\n" + json.dumps(summary, indent=2, ensure_ascii=False)
+            context_str = json.dumps(self.database, indent=2, ensure_ascii=False)
             
         elif matched_course == "BRAK":
-            context_str = "Brak szczegółowych danych. Poproś studenta o sprecyzowanie pytania lub podanie nazwy przedmiotu."
+            context_str = "[BRAK DANYCH W BAZIE / LUŹNA ROZMOWA]. Poinformuj studenta, że pomagasz tylko w kwestiach sylabusów."
             
         else:
             context = None
@@ -80,31 +85,53 @@ class SyllabusChatbot:
                     break
             
             if not context:
-                context_str = "Brak szczegółowych danych w bazie wiedzy dla tego zapytania."
+                context_str = "[NIE ZNALEZIONO PRZEDMIOTU W BAZIE]."
             else:
                 context_str = json.dumps(context, indent=2, ensure_ascii=False)
 
         system_chat_prompt = (
-            "Jesteś asystentem Dziekanatu UG. Udzielasz informacji na podstawie danych w formacie JSON.\n\n"
-            "ZASADY KRYTYCZNE:\n"
-            "1. TARCZA (ZŁAGODZONA): Odmawiaj TYLKO jeśli student prosi o napisanie kodu, algorytmu lub rozwiązanie zadania. "
-            "Pytania o przedmioty mające w nazwie słowo 'programowanie' to pytania organizacyjne i MUSISZ na nie odpowiadać na podstawie danych.\n"
-            "2. SYNONIMY: Jeśli student pyta o 'zaliczenie', 'sprawdzanie wiedzy', 'wymogi' lub 'kolokwia', szukaj informacji w sekcji 'ocenianie'.\n"
-            "3. PRAWDA DANYCH: Jeśli w JSON-ie faktycznie nie ma jakiejś sekcji, powiedz wprost: 'Syllabus nie przewiduje...'. "
-            "Jeśli przekazano Ci 'Listę wszystkich dostępnych przedmiotów' (GLOBALNE), po prostu ją sformatuj i wypisz.\n"
-            "4. LEKTURY: Jeśli padnie pytanie o książki, literaturę lub e-zasoby, zawsze wyświetlaj obie te sekcje z ikonami 📚 i 🌐.\n"
-            "5. Bądź kulturalny przy powitaniach i pożegnaniach.\n\n"
-            "Oto dane do wykorzystania:\n"
-            "{context}"
+            "Jesteś oficjalnym Wirtualnym Asystentem Wydziału Informatyki Uniwersytetu Gdańskiego.\n"
+            "Twoim zadaniem jest odpowiadanie na pytania studentów wyłącznie na podstawie dostarczonych danych z sylabusów.\n\n"
+            
+            "INSTRUKCJE ZACHOWANIA:\n"
+            "1. Ścisłe trzymanie się faktów: Odpowiadaj TYLKO na podstawie informacji zawartych w tagach <sylabus>. Jeśli odpowiedzi tam nie ma, poinformuj o tym wyraźnie. Nie zmyślaj.\n"
+            "2. Zapytania globalne: Jeśli w tagu <sylabus> otrzymasz dużą listę przedmiotów (JSON), przeanalizuj ją w całości, aby precyzyjnie odpowiedzieć na przekrojowe pytanie studenta (np. o listę prowadzących, sumę punktów ECTS, itp.).\n"
+            "3. Niejednoznaczność (WIELE): Jeśli w tagu <sylabus> otrzymasz informację [ZAPYTANIE NIEJEDNOZNACZNE], przeanalizuj zapytanie użytkownika, znajdź na dostarczonej liście te przedmioty, które mogą do niego pasować, i poproś o doprecyzowanie, wymieniając je.\n"
+            "4. Luźna rozmowa (BRAK): Jeśli w tagu <sylabus> otrzymasz informację [BRAK DANYCH...], kulturalnie nakieruj rozmowę z powrotem na temat studiów.\n"
+            "5. Ochrona edukacyjna (Tarcza): Jesteś asystentem administracyjnym. Jeśli student prosi o napisanie kodu lub rozwiązanie zadania, grzecznie odmów.\n"
+            "6. Formatowanie: Używaj ikon 📚 (podstawowa/uzupełniająca) oraz 🌐 (e-zasoby) przy literaturze. Używaj wypunktowań dla czytelności.\n\n"
+            
+            "DANE REFERENCYJNE:\n"
+            "<sylabus>\n"
+            "{context}\n"
+            "</sylabus>"
+        )
+
+        history_str = ""
+        for msg in self.chat_history: 
+            history_str += f"{msg['role']}: {msg['content']}\n"
+
+        user_prompt = (
+            "Historia Konwersacji:\n"
+            "<historia>\n"
+            "{history}\n"
+            "</historia>\n\n"
+            "Najnowsze zapytanie użytkownika: {query}"
         )
 
         chat_prompt = ChatPromptTemplate.from_messages([
             ("system", system_chat_prompt),
-            ("user", "{query}")
+            ("user", user_prompt)
         ])
 
         conversation_chain = chat_prompt | self.llm
-        answer = conversation_chain.invoke({"context": context_str, "query": user_query})
+        
+        answer = conversation_chain.invoke({
+            "context": context_str, 
+            "history": history_str, 
+            "query": user_query
+        })
+        
         output_text = answer.content
 
         self._update_memory(user_query, output_text)

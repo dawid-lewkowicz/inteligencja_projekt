@@ -1,14 +1,15 @@
 import streamlit as st
 from chatbot import SyllabusChatbot
 
+
 st.set_page_config(
-    page_title="Asystent Dziekanatu UG",
-    page_icon="🎓",
-    layout="centered"
+    page_title="Asystent studenta",
+    page_icon="🦉",
+    layout="wide" # "centered"
 )
 
-st.title("🎓 Inteligentny Asystent Sylabusów")
-st.markdown("Zadaj pytanie dotyczące przedmiotów, form zaliczenia lub literatury na Uniwersytecie Gdańskim.")
+st.title("🦉 Inteligentny Asystent Sylabusów")
+st.markdown("Zadaj pytanie dotyczące przedmiotów, form zaliczenia lub literatury dotyczące kierunku Informatyka Prakyczna na Uniwersytecie Gdańskim.")
 st.divider()
 
 # inicjalizacja bota tylko przy pierwszym wejściu użytkownika na stronę
